@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Revocafe database has all the recipes we offer at Revocafe restaurant"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="img/logo-min.jpg" type="image/jpg" />
+
+    <!-- Font awesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <!-- Style sheets -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <!-- JavaScript files -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" defer src="js/script.js"></script>
+
+    <title>Revocafe Database</title>
+  </head>
+  <body>
+    <h1 class="text-center">Revocafe restaurant</h1>
+    <div class="revocafe">
+      <div class="revocafe-user">
+        <article class="sign-in">
+          <h2 class="text-center">Sign in and get started</h2>
+          <form class="sign-in-form">
+            <div class="form-group">
+              <label for="full-name">Full Name:</label>
+              <input
+                type="text"
+                name="full-name"
+                id="full-name"
+                placeholder="e.g Joel Nambala"
+                required
+                class="form-control"
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="joel@example.io"
+                required
+                class="form-control"
+              />
+            </div>
+            <div class="form-group">
+              <label for="tel">Tel:</label>
+              <input
+                type="tel"
+                name="tel"
+                id="tel"
+                placeholder="e.g +254722000000"
+                required
+                class="form-control"
+              />
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="password"
+                required
+                class="form-control"
+              />
+              <small class="error-password text-danger"
+                >Password should have more than 6 characters</small
+              >
+            </div>
+            <div class="form-group">
+              <label for="confirm-password">Confirm password</label>
+              <input
+                type="password"
+                name="confirm-password"
+                id="confirm-password"
+                placeholder="confirm-password"
+                required
+                class="form-control"
+              />
+              <small class="error-confirm-password text-danger"
+                >Password should have more than 6 characters</small
+              >
+            </div>
+            <button type="submit" class="sign-up-btn btn btn-primary">
+              Sign up
+            </button>
+          </form>
+          <p>
+            Already have an account?
+            <a href="" class="log-in-link">Log in</a> here.
+          </p>
+        </article>
+
+        <article class="log-in">
+          <h2 class="text-center">Log in to get started</h2>
+          <form class="log-in-form">
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                name="email"
+                id="log-in-email"
+                placeholder="joel@example.io"
+                required
+                class="form-control"
+              />
+            </div>
+            <div class="form-group">
+              <label for="password">Password:</label>
+              <input
+                type="password"
+                name="password"
+                id="log-in-password"
+                class="form-control"
+                required
+                placeholder="password"
+              />
+            </div>
+            <small class="log-in-error text-danger"
+              >Email and password not found!</small
+            >
+            <br />
+            <button type="submit" class="btn btn-primary log-in-btn">
+              Log in
+            </button>
+          </form>
+        </article>
+      </div>
+
+      <article class="revocafe-api">
+        <div class="container">
+          <div class="revocafe-nav">
+            <img src="/img/logo-min.jpg" alt="Logo" class="logo" />
+            <button class="place-order">Place order</button>
+          </div>
+          <div class="revocafe-container">
+            <h2 class="text-center">Welcome to Revocafe restaurant recipes</h2>
+            <p class="text-center p-head">
+              We offer high quality meals just for you. We have a lot of recipes
+              in our catalogue. You can search any where at any time
+            </p>
+            <form class="search-bar">
+              <input
+                type="text"
+                placeholder="search over 1000+ recipes"
+                class="recipe-search"
+              />
+              <button class="search-btn">search</button>
+            </form>
+            <div class="search-results"></div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </body>
+  <footer class="bg-secondary text-white footer">
+    <div class="container footer-div">
+      <div class="contact">
+        <h3>Contact us</h3>
+        <ul>
+          <li>Revolution house, Moi avenue, Nairobi</li>
+          <li>
+            <a href="mailto:joel.n.wanjala@gmail.com">revocafe@info.com</a>
+          </li>
+          <li><a href="tel:+254792555952">+254792555952</a></li>
+        </ul>
+      </div>
+      <div class="account">
+        <h3>Account</h3>
+        <ul>
+          <li><a href="">Create account</a></li>
+          <li><a href="">Sign in</a></li>
+          <li><a href="">iOS app</a></li>
+          <li><a href="">Android app</a></li>
+        </ul>
+      </div>
+      <div class="company">
+        <h3>Companies</h3>
+        <ul>
+          <li><a href="">Cooking partners</a></li>
+          <li><a href="">Carriers</a></li>
+          <li><a href="">Business</a></li>
+        </ul>
+      </div>
+      <div class="resources">
+        <h3>Resources</h3>
+        <ul>
+          <li><a href="">Recipes</a></li>
+          <li><a href="">Help center</a></li>
+          <li><a href="">Privace and terms</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="media">
+      <ul class="nav">
+        <li class="nav-item">
+          <a href="#" class="nav-link">Facebook</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Twitter</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Instagram</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="copyright">
+      <p class="text-center text-white" style="font-size: 1.6rem">
+        Created by Joel Nambala
+      </p>
+    </div>
+  </footer>
+</html>
